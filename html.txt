@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Putri Shop Handphone - Toko HP Terpercaya dan Bermutu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 0, 123, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-pink-50 to-purple-100 text-gray-800 font-sans">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Putri Shop Handphone</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-pink-200 transition">Beranda</a>
+                <a href="#products" class="hover:text-pink-200 transition">Produk</a>
+                <a href="#about" class="hover:text-pink-200 transition">About</a>
+                <a href="#contact" class="hover:text-pink-200 transition">Kontak</a>
+            </nav>
+            <button class="md:hidden" onclick="toggleMenu()">&equiv;</button>
+            <div id="mobile-menu" class="md:hidden hidden absolute top-full left-0 w-full bg-purple-500 shadow-md">
+                <a href="#home" class="block px-4 py-2 hover:text-pink-200">Beranda</a>
+                <a href="#products" class="block px-4 py-2 hover:text-pink-200">Produk</a>
+                <a href="#about" class="block px-4 py-2 hover:text-pink-200">About</a>
+                <a href="#contact" class="block px-4 py-2 hover:text-pink-200">Kontak</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20 bg-gradient-to-r from-purple-400 via-pink-500 to-red-400 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">Selamat Datang di Putri Shop Handphone</h2>
+            <p class="text-xl mb-8">Toko handphone terpercaya kami menyediakan berbagai jenis ponsel dengan harga terbaik, aksesori cantik, dan layanan prima untuk putri-putri modern.</p>
+            <a href="#products" class="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Belanja Sekarang</a>
+            <div class="mt-10">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5ab43712-b6fe-45c6-9096-c5360f1a1ed9.png" alt="Elegant purple and pink storefront with display cases showing various colorful smartphones, crystal chandeliers overhead, and fashionably dressed female mannequins accessorizing phones with stylish cases and jewelry" class="max-w-full rounded-lg"/>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10 text-purple-700">Koleksi Handphone Unggulan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="product-card bg-pink-50 p-6 rounded-lg border border-pink-200">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b58a1a07-bef5-4baf-a68a-d1b162c7ad85.png" alt="Front view of iPhone 15 in pastel pink color with holographic case featuring butterfly patterns and crystal-studded phone charm dangling" class="w-full h-48 object-cover rounded-lg mb-4"/>
+                    <h3 class="text-xl font-semibold mb-2">iPhone 15</h3>
+                    <p class="text-gray-600 mb-4">Gaya dan teknologi terbaru untuk gaya hidup putri.</p>
+                    <p class="text-pink-600 font-bold">Rp 15.000.000</p>
+                    <button class="bg-pink-500 text-white px-4 py-2 rounded mt-2 hover:bg-pink-600">Beli Sekarang</button>
+                </div>
+                <div class="product-card bg-pink-50 p-6 rounded-lg border border-pink-200">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3bf1ede3-2c71-4b10-a181-814e5d73fbd3.png" alt="Samsung Galaxy S24 in lavender shade with floral phone screen protector and matching wireless earbuds in a satin pouch" class="w-full h-48 object-cover rounded-lg mb-4"/>
+                    <h3 class="text-xl font-semibold mb-2">Samsung Galaxy S24</h3>
+                    <p class="text-gray-600 mb-4">Kamera canggih dan desain elegan.</p>
+                    <p class="text-pink-600 font-bold">Rp 12.000.000</p>
+                    <button class="bg-pink-500 text-white px-4 py-2 rounded mt-2 hover:bg-pink-600">Beli Sekarang</button>
+                </div>
+                <div class="product-card bg-pink-50 p-6 rounded-lg border border-pink-200">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4da5fe0d-2a1b-47f0-a546-2277269eb18b.png" alt="Oppo Reno 10 in pearl white with retractable camera system and silicone case etched with goddess silhouettes" class="w-full h-48 object-cover rounded-lg mb-4"/>
+                    <h3 class="text-xl font-semibold mb-2">Oppo Reno 10</h3>
+                    <p class="text-gray-600 mb-4">Inovasi mutakhir dengan kamera pop-up.</p>
+                    <p class="text-pink-600 font-bold">Rp 8.000.000</p>
+                    <button class="bg-pink-500 text-white px-4 py-2 rounded mt-2 hover:bg-pink-600">Beli Sekarang</button>
+                </div>
+                <div class="product-card bg-pink-50 p-6 rounded-lg border border-pink-200">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/48e77f01-baff-4c56-8c60-f525615931d2.png" alt="Xiaomi 13T in rose gold with leather phone wallet and crystal-embossed case displaying celestial constellations" class="w-full h-48 object-cover rounded-lg mb-4"/>
+                    <h3 class="text-xl font-semibold mb-2">Xiaomi 13T</h3>
+                    <p class="text-gray-600 mb-4">Performanya kuat, desainnya mewah.</p>
+                    <p class="text-pink-600 font-bold">Rp 7.500.000</p>
+                    <button class="bg-pink-500 text-white px-4 py-2 rounded mt-2 hover:bg-pink-600">Beli Sekarang</button>
+                </div>
+                <div class="product-card bg-pink-50 p-6 rounded-lg border border-pink-200">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9e5d3076-b2fb-4bf8-85ae-5eb74fa962ec.png" alt="Vivo X90 in champagne gold with heart-shaped phone ring holder and personalized engraving featuring elegant script name" class="w-full h-48 object-cover rounded-lg mb-4"/>
+                    <h3 class="text-xl font-semibold mb-2">Vivo X90</h3>
+                    <p class="text-gray-600 mb-4">Kamera profesional untuk selfie sempurna.</p>
+                    <p class="text-pink-600 font-bold">Rp 9.000.000</p>
+                    <button class="bg-pink-500 text-white px-4 py-2 rounded mt-2 hover:bg-pink-600">Beli Sekarang</button>
+                </div>
+                <div class="product-card bg-pink-50 p-6 rounded-lg border border-pink-200">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ad06a6a3-d2ee-4469-ac7c-c27d95bc468a.png" alt="Realme GT Neo 5 in aurora blue with butterfly wing phone stand and lace-patterned screen protector" class="w-full h-48 object-cover rounded-lg mb-4"/>
+                    <h3 class="text-xl font-semibold mb-2">Realme GT Neo 5</h3>
+                    <p class="text-gray-600 mb-4">Gaming dan hiburan tanpa batas.</p>
+                    <p class="text-pink-600 font-bold">Rp 6.500.000</p>
+                    <button class="bg-pink-500 text-white px-4 py-2 rounded mt-2 hover:bg-pink-600">Beli Sekarang</button>
+                </div>
+                <div class="product-card bg-pink-50 p-6 rounded-lg border border-pink-200">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/93070942-572b-457f-8ecf-855b81d13445.png" alt="Infinix Zero 30 in metallic blush with scented phone diffuser attachment and mirrored back panel for makeup touch-ups" class="w-full h-48 object-cover rounded-lg mb-4"/>
+                    <h3 class="text-xl font-semibold mb-2">Infinix Zero 30</h3>
+                    <p class="text-gray-600 mb-4">Desain feminin dengan fitur multifungsi.</p>
+                    <p class="text-pink-600 font-bold">Rp 5.500.000</p>
+                    <button class="bg-pink-500 text-white px-4 py-2 rounded mt-2 hover:bg-pink-600">Beli Sekarang</button>
+                </div>
+                <div class="product-card bg-pink-50 p-6 rounded-lg border border-pink-200">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/db28f866-dbec-4c2b-b486-41aaae6d8684.png" alt="Asus Zenfone 10 in sapphire blue with jewelled phone wrist strap and floral embossed leather back" class="w-full h-48 object-cover rounded-lg mb-4"/>
+                    <h3 class="text-xl font-semibold mb-2">Asus Zenfone 10</h3>
+                    <p class="text-gray-600 mb-4">Ringkas dan stylish untuk mobilitas tinggi.</p>
+                    <p class="text-pink-600 font-bold">Rp 10.000.000</p>
+                    <button class="bg-pink-500 text-white px-4 py-2 rounded mt-2 hover:bg-pink-600">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aksesori Section -->
+    <section id="aksesori" class="py-20 bg-gradient-to-r from-pink-100 to-purple-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-10 text-purple-700">Aksesori Cantik untuk Handphone Anda</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/063e7c35-a903-4f6e-bd75-854ddf191352.png" alt="Crystal-encrusted phone case in rose gold with dangling heart charms and satin lining inside" class="mx-auto mb-4 w-48 h-48 object-cover rounded-lg"/>
+                    <h3 class="text-xl font-semibold mb-2">Case Kristal Mewah</h3>
+                    <p>Perlindungan gaya dengan sentuhan feminin yang elegan.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fc1cb010-5b07-476a-968b-db1f1ca515cd.png" alt="Wireless earbuds in pearl white with diamond-studded charging case and velvet storage pouch" class="mx-auto mb-4 w-48 h-48 object-cover rounded-lg"/>
+                    <h3 class="text-xl font-semibold mb-2">Earbuds Nirkabel Berlian</h3>
+                    <p>Suara jernih dengan desain yang memukau.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4bec2562-9d63-4d66-9551-ca4b74230e72.png" alt="Phone stand in antique gold with engraved floral motifs and secure grip base" class="mx-auto mb-4 w-48 h-48 object-cover rounded-lg"/>
+                    <h3 class="text-xl font-semibold mb-2">Stand Handphone Emas</h3>
+                    <p>Temukan bentuk yang sempurna untuk selfie atau video call.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8 text-purple-700">Tentang Putri Shop Handphone</h2>
+            <p class="mb-8 max-w-2xl mx-auto">Kami adalah toko handphone khusus untuk wanita, menyediakan produk berkualitas tinggi dengan fokus pada estetika, fungsionalitas, dan kebahagiaan pelanggan. Setiap pembelian didukung oleh layanan purna jual terbaik dan garansi memuaskan.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/879968c2-7ad5-4435-b534-dd49bd3bc548.png" alt="Pink ribbon icon symbolizing customer care with heart shapes and soft glow effect" class="mx-auto mb-4 w-32 h-32 rounded-full object-cover"/>
+                    <h3 class="text-xl font-semibold mb-2">Pelayanan Prima</h3>
+                    <p>Tim kami siap membantu dengan senyum dan profesionalitas.</p>
+                </div>
+                <div class="p-6">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a64ce806-aeb7-4311-b4fa-f0aeef1fda58.png" alt="Shield emblem in purple gradient representing warranty protection with crown motif" class="mx-auto mb-4 w-32 h-32 rounded-full object-cover"/>
+                    <h3 class="text-xl font-semibold mb-2">Garansi Terpercaya</h3>
+                    <p>Garansi resmi dan layanan perbaikan cepat.</p>
+                </div>
+                <div class="p-6">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/58602bf3-bb93-423b-9f74-d78fcdff5b67.png" alt="Shopping bag icon with feminine touches like lace and bows in pastel colors" class="mx-auto mb-4 w-32 h-32 rounded-full object-cover"/>
+                    <h3 class="text-xl font-semibold mb-2">Belanja Nyaman</h3>
+                    <p>Pengiriman cepat dan kemasan eksklusif.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-r from-purple-600 to-pink-500 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Hubungi Kami</h2>
+            <p class="mb-4">Email: info@putrishophp.com | Telepon: +62 812 3456 7890</p>
+            <p class="mb-8">Kunjungi toko kami di Jl. Putri No. 123, Jakarta.</p>
+            <form class="max-w-md mx-auto">
+                <input type="text" placeholder="Nama Lengkap" class="w-full mb-4 p-3 border rounded-lg" required>
+                <input type="email" placeholder="Email Anda" class="w-full mb-4 p-3 border rounded-lg" required>
+                <textarea placeholder="Pesan Anda" class="w-full mb-4 p-3 border rounded-lg" required></textarea>
+                <button type="submit" class="bg-white text-purple-600 px-6 py-3 rounded-lg hover:bg-gray-200 transition">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2023 Putri Shop Handphone. All rights reserved. Belanja cerdas, belanja bahagia.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
+</content>
+</create_file>
